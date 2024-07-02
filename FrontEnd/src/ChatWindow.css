@@ -14,7 +14,7 @@ body, html, #root, .App {
 }
 
 .chat-window {
-    width: 88%;
+    width: 85%;
     height: 100%;
     border-radius: 5px;
     display: flex;
@@ -26,7 +26,7 @@ body, html, #root, .App {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the messages horizontally */
@@ -38,6 +38,8 @@ body, html, #root, .App {
     margin: 5px 0;
     border-radius: 5px;
     max-width: 70%;
+    word-wrap: break-word; /* Ensure text wraps within the message box */
+    word-break: break-word; /* Ensure long words break and wrap within the message box */
   }
   
   .message.me {
@@ -55,8 +57,6 @@ body, html, #root, .App {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    border-top: 1px solid #ccc;
-    width: 50%
   }
   
   .input {
@@ -64,7 +64,7 @@ body, html, #root, .App {
     color: #242424;
     padding: .15rem .5rem;
     min-height: 40px;
-    border-radius: 4px;
+    border-radius: 50px;
     outline: none;
     border: none;
     line-height: 1.15;
@@ -74,7 +74,7 @@ body, html, #root, .App {
   
   .input:focus {
     border-bottom: 2px solid #5b5fc7;
-    border-radius: 4px 4px 2px 2px;
+    border-radius: 50px;
   }
   
   .input:hover {
